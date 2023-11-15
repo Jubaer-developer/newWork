@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn with sumith</title>
+    <style>
+      .one {
+        position: relative;
+        bottom: 28px;
+        left: -29px;
+        display: inline;
+        padding-right: 32px;
+        font-size: 60px;
+        border-radius: 5px;
+        border: blue 2px solid;
+        transform: rotate(360deg);
+        transition: 2s all;
+      }
+      @media screen and (max-width: 600px) {
+        .one :nth-child(2) {
+          color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- event work stert -->
+    <button onclick="onFunction()">Try it</button><br /><br />
+    <!-- event work end -->
+    <!-- button code stert -->
+    <button type="button" onclick="tryItOne()">Try it 1</button>
+    <br />
+    <br />
+    <button type="button" onclick="towFunction">Try it 2</button>
+    <br />
+    <br />
+    <button type="button" onclick="threeFunction">Try it 3</button>
+    <br />
+    <br />
+    <button type="button" onclick="fourFunction">Try it 4</button>
+    <br />
+    <br />
+    <button type="button" onclick="fiveFunction">Try it 5</button>
+    <br />
+    <br />
+    <!-- button code end -->
+    <!-- test loop stert -->
+    <p id="demo"></p>
+    <!-- test loop end -->
+    <script src="./new.js"></script>
+  </body>
+</html>
