@@ -1223,3 +1223,52 @@ console.log(+(0b01011).toString(10)); // 11
 console.log(+(11).toString(2)); // 1011
 // simpol method decimal to binary end
 // bitwise operator end
+// regular expression stert
+let regular = "hi How are you";
+console.log(regular.search(/how/i)); // 3
+console.log(regular.search("How")); // 3
+// using string search() with a regular expression stert
+let regularOne = "i Am fine And you";
+let regularTow = regularOne.search(/a/i);
+console.log(regularTow);
+// using string search() with a regular expression end
+// Use String replace() With a Regular Expression stert
+let regularThree = "you are so Happey";
+console.log(regularThree.replace(/happey/i, "fine."));
+// Use String replace() With a Regular Expression end
+// perform a global match stert
+let regularFour = "how are i how are i how are i";
+console.log(regularFour.replace(/i/gi, "you."));
+let regularFive = `how are i how are i
+how are i
+how are i
+`;
+console.log(regularFive.replace(/i/gi, "you"));
+// perform a global match end
+// regular expression stert
+console.log(regularFive.match(/[ab]/gi)); // (4) ['a', 'a', 'a', 'a']
+let regularSix = 1234556;
+let result = String(regularSix).match(/[2-4]/g);
+console.log(result); // (3) ['2', '3', '4']
+let regularEight = "re, green, red, green, gren, gr, blue, yellow";
+console.log(regularEight.match(/red|Green/gi));
+// regular expression end
+// metacharacter stert
+let metacharacter = "i am 10 years old.";
+console.log(metacharacter.match(/\d/g)); // (2) ['1', '0']
+console.log(metacharacter.match(/\s/g)); // (4) [' ', ' ', ' ', ' ']
+console.log(metacharacter.match(/\b Years/gi)); // ['years']
+console.log(metacharacter.search(/\bY/gi)); // 8
+console.log(metacharacter.match(/years\b/gi)); // ['years']
+// metacharacter end
+// quantifier stert
+let quantifier = "Hellooo World! Hello W3Schools!";
+console.log(quantifier.match(/O+/gi)); // (4) ['ooo', 'o', 'o', 'oo']
+console.log(quantifier.match(/lo*/gi)); // (6) ['l', 'looo', 'l', 'l', 'lo', 'l']
+// quantifier end
+// RegExp object Stert
+console.log(/\d/gi.test("i am 10 years old")); //true
+console.log(/Ye * /gi.test("i am 10 years old.")); // false
+console.log(/\s/g.exec("how are you")); // [' ', index: 3, input: 'how are you', groups: undefined]
+// RegExp object end
+// regular expression end
